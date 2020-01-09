@@ -15,10 +15,15 @@ public class Question {
 		if (trueLength < str.length) str[trueLength] = '\0';
 		for (i = trueLength - 1; i >= 0; i--) {
 			if (str[i] == ' ') {
+				System.out.println("before");
+				System.out.println("\"" + AssortedMethods.charArrayToString(str) + "\"");
 				str[index - 1] = '0';
 				str[index - 2] = '2';
 				str[index - 3] = '%';
 				index = index - 3;
+				System.out.println("after");
+				System.out.println("\"" + AssortedMethods.charArrayToString(str) + "\"");
+
 			} else {
 				str[index - 1] = str[i];
 				index--;
@@ -40,6 +45,6 @@ public class Question {
 		char[] arr = str.toCharArray();
 		int trueLength = findLastCharacter(arr) + 1;
 		replaceSpaces(arr, trueLength);	
-		System.out.println("\"" + AssortedMethods.charArrayToString(arr) + "\"");
+	//	System.out.println("\"" + AssortedMethods.charArrayToString(arr) + "\"");
 	}
 }

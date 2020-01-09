@@ -21,7 +21,7 @@ public class QuestionB {
 	}
 	
 	public static void main(String[] args) {
-		String pali = "Ratzs live on no evil starz";
+		String pali = "Ratzzzs live o evil starzzz";
 		System.out.println(isPermutationOfPalindrome(pali));
 		String pali2 = "Zeus was deified, saw Suez";
 		System.out.println(isPermutationOfPalindrome(pali2));
